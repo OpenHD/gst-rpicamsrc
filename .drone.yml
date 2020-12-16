@@ -4,6 +4,8 @@ name: armhf-raspbian-stretch
 platform:
   os: linux
   arch: arm
+image_pull_secrets:
+- dockerconfigjson
 steps:
 - name: fetch
   image: arm32v6/alpine
@@ -29,6 +31,8 @@ name: armhf-raspbian-buster
 platform:
   os: linux
   arch: arm
+image_pull_secrets:
+- dockerconfigjson
 steps:
 - name: fetch
   image: arm32v6/alpine
